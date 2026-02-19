@@ -1,19 +1,139 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.hero{
-    width: 100%;
-    min-height: 100vh;
-    
+body {
+    background-color: #111;
 }
 
-nav{
-    padding: 10px 0;
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    
+    align-items: center;
+    padding: 15px 40px;
+    background: linear-gradient(90deg, #000000, #1c1c1c);
+    color: white;
+}
+
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e50914;
+ 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #e50914;
+}
+
+.search-box input {
+    padding: 7px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 7px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.login:hover {
+    background: white;
+    color: black;
+}
+
+.signup {
+    background: #e50914;
+    color: white;
+}
+
+.signup:hover {
+    background: #b20710;
+}
+body {
+    margin: 0;
+    background-color: #111;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    margin: 20px;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.movie-card {
+    width: 200px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.movie-title {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+@media (max-width: 600px) {
+   ul{
+ opacity: 0;
+   }
+   li{
+    display: none;
+   }
+.logo{
+    text-align: center;
+}
+.search-box{
+    margin-left: 25px;
+}
 }
